@@ -46,3 +46,18 @@
   grid-area: ftr;
   background-color: #f08a4b;
 }
+
+@media (max-width: 500px) {
+  #app {
+    grid-template-rows: 10% 10% 30% 10% 30% 10%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "hdr"
+      "nav"
+      "ar1"
+      "ads"
+      "ar2"
+      "ftr"
+    ;
+  }
+}
