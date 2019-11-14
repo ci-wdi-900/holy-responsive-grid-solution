@@ -61,3 +61,17 @@
     ;
   }
 }
+
+@media (min-width: 501px) and (max-width: 1100px) {
+  #app {
+    grid-template-rows: 20% 10% 30% 30% 10%;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+      "hdr hdr"
+      "nav nav"
+      "ar1 ads"
+      "ar2 ads"
+      "ftr ftr"
+    ;
+  }
+}
