@@ -3,31 +3,46 @@
 }
 
 #app {
+  display: grid;
+  grid-template-rows: 20% 30% 30% 20%;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: 
+    "hdr hdr hdr"
+    "nav ar1 ads"
+    "nav ar2 ads"
+    "ftr ftr ftr"
+  ;
   font-size: 5em;
   text-align: center;
   height: 100vh;
 }
 
 #header {
+  grid-area: hdr;
   background-color: #f3ca40;
 }
 
 #nav {
+  grid-area: nav;
   background-color: #4b4e6d;
 }
 
 #article-1 {
+  grid-area: ar1;
   background-color: #6a8d92;
 }
 
 #article-2 {
+  grid-area: ar2;
   background-color: yellow;
 }
 
 #ads {
+  grid-area: ads;
   background-color: #f2a541;
 }
 
 #footer {
+  grid-area: ftr;
   background-color: #f08a4b;
 }
